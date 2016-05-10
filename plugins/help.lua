@@ -148,7 +148,7 @@ do
     if msg.text == '!help' then
       return telegram_help(msg)
     elseif matches[1] == 'all' then
-      reply_msg(msg.id, 'Please read @thefinemanual', ok_cb, true)
+      reply_msg(msg.id, '<code>Please read</code> Telegram.me/OffLiNeTeam', ok_cb, true)
       --return help_all(requester)
     else
       local text = ''
@@ -159,11 +159,11 @@ do
       end
       if not text then
         reply_msg(msg.id, 'No help entry for "'..matches[1]..'".\n'
-            ..'Please visit @thefinemanual for the complete list.', ok_cb, true)
+            ..'<code>Please visit</code> Telegram.me/OffLiNeTeam <code>for the complete list.</code>', ok_cb, true)
         return
       end
       if text == 'text' then
-        reply_msg(msg.id, 'The plugins is not for your privilege.', ok_cb, true)
+        reply_msg(msg.id, '<code>The plugins is not for your privilege.</code>', ok_cb, true)
         return
       end
       send_api_msg(msg, get_receiver_api(msg), text, true, 'html')
