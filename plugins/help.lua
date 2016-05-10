@@ -104,9 +104,9 @@ do
       end
     end
     text = text..'\n'..'There are <b>'..i..'</b> plugins help available.\n'
-           ..'<b>-</b> <code>!help [plugin name]</code> for more info.\n'
-           ..'<b>-</b> <code>!help [plugin number]</code> for more info.\n'
-           ..'<b>-</b> <code>!help all</code> to show all info.'
+           ..'<b>-</b> <code>!help [plugin name]</code> <b>for more info</b>.\n'
+           ..'<b>-</b> <code>!help [plugin number]</code> <b>for more info.<b>\n'
+           ..'<b>-</b> <code>!help all</code> <b>to show all info.</b>'
     send_api_msg(msg, get_receiver_api(msg), text, true, 'html')
   end
 
@@ -177,16 +177,16 @@ do
     description = 'Help plugin. Get info from other plugins.',
     usage = {
       '<code>!help</code>',
-      'Show list of plugins.',
+      '<b>Show list of plugins.</b>',
       '',
       '<code>!help all</code>',
-      'Show all commands for every plugin.',
+      '<b>Show all commands for every plugin.</b>',
       '',
       '<code>!help [plugin_name]</code>',
-      'Commands for that plugin.',
+      '<b>Commands for that plugin.</b>',
       '',
       '<code>!help [number]</code>',
-      'Commands for that plugin. Type !help to get the plugin number.'
+      '<b>Commands for that plugin. Type !help to get the plugin number.</b>'
     },
     patterns = {
       '^!help$',
