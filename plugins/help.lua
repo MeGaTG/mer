@@ -104,9 +104,9 @@ do
       end
     end
     text = text..'\n'..'There are <b>'..i..'</b> plugins help available.\n'
-           ..'<b>-</b> <code>!help [plugin name]</code> <b>for more info</b>.\n'
-           ..'<b>-</b> <code>!help [plugin number]</code> <b>for more info.<b>\n'
-           ..'<b>-</b> <code>!help all</code> <b>to show all info.</b>'
+           ..'<b>-</b> <code>!help [plugin name]</code> for more info.\n'
+           ..'<b>-</b> <code>!help [plugin number]</code> for more info.\n'
+           ..'<b>-</b> <code>!help all</code> to show all info.'
     send_api_msg(msg, get_receiver_api(msg), text, true, 'html')
   end
 
