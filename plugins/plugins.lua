@@ -172,23 +172,23 @@ do
     usage = {
       sudo = {
         '<code>!plugins enable [plugin]</code>',
-        'Enable plugin.',
+        '<b>Enable plugin.</b>',
         '',
         '<code>!plugins disable [plugin]</code>',
-        'Disable plugin.',
+        '<b>Disable plugin.</b>',
         '',
         '<code>!plugins reload</code>',
-        'Reloads all plugins.'
+        '<b>Reloads all plugins.</b>'
       },
       moderator = {
         '<code>!plugins</code>',
-        'List all plugins.',
+        '<b>List all plugins.</b>',
         '',
         '<code>!plugins enable [plugin] chat</code>',
-        'Re-enable plugin only this chat.',
+        '<b>Re-enable plugin only this chat.</b>',
         '',
         '<code>!plugins disable [plugin] chat</code>',
-        'Disable plugin only this chat.'
+        '<b>Disable plugin only this chat.</b>'
       },
     },
     patterns = {
