@@ -1663,15 +1663,15 @@ do
       if is_mod(msg, gid, uid) then
         -- Print group settings
         if matches[1] == 'group' and matches[2] == 'settings' then
-          local text = '*Settings for*'..msg.to.title..'*\n'
-                ..'*-* *Arabic msg* = `'..data.lock.arabic..'`\n'
-                ..'*-* *Lock group bot* = `'..data.lock.bot..'`\n'
-                ..'*-* *Lock group name* = `'..data.lock.name..'`\n'
-                ..'*-* *Lock group photo* = `'..data.lock.photo..'`\n'
-                ..'*-* *Lock group member* = `'..data.lock.member..'`\n'
-                ..'*-* Spam protection* = `'..data.antispam..'`\n'
-                ..'*-* *Sticker policy* = `'..data.sticker..'`\n'
-                ..'*-* *Welcome message* = `'..data.welcome.to..'`\n'
+          local text = '*Settings for* _'..msg.to.title..'_\n'
+                ..'*-* *Arabic msg* = '..data.lock.arabic..'\n'
+                ..'*-* *Lock group bot* = '..data.lock.bot..'\n'
+                ..'*-* *Lock group name* = '..data.lock.name..'\n'
+                ..'*-* *Lock group photo* = '..data.lock.photo..'\n'
+                ..'*-* *Lock group member* = '..data.lock.member..'\n'
+                ..'*-* Spam protection* = '..data.antispam..'\n'
+                ..'*-* *Sticker policy* = '..data.sticker..'\n'
+                ..'*-* *Welcome message* = '..data.welcome.to..'\n'
           send_api_msg(msg, get_receiver_api(msg), text, true, 'markdown')
         end
 
@@ -1769,7 +1769,7 @@ do
             reply_msg(msg.id, 'Invite link for this group has been revoked', ok_cb, true)
           else
             local about = data.description
-            local clickme = '<a href="'..link..'">Click me to join '..gtitle..'</a>'
+            local clickme = '<a href="'..link..'">Group Link '..gtitle..'</a>'
             if not about then
               send_api_msg(msg, get_receiver_api(msg), '<b>'..gtitle..'</b>\n\n'..clickme, true, 'html')
             else
