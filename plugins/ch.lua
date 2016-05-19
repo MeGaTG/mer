@@ -7,7 +7,7 @@ local function run(msg, matches)
   local response = {}
 local text = matches[1]
   local res, code = https.request{
-    url = url..'?chat_id=@Shahab_Ch'..markdown..web_preview..'&text='..URL.escape(text),
+    url = url..'?chat_id=@OffliNeTeam'..markdown..web_preview..'&text='..URL.escape(text),
     method = "POST",
     sink = ltn12.sink.table(response),
   }
