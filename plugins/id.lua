@@ -1,14 +1,10 @@
 --[[
-
 Print user identification/informations by replying their post or by providing
 their username or print_name.
-
 !id <text> is the least reliable because it will scan trough all of members
 and print all member with <text> in their print_name.
-
 chat_info can be displayed on group, send it into PM, or save as file then send
 it into group or PM.
-
 --]]
 
 do
